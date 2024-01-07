@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="pragma" content="no-cache"> <!-- キャッシュさせない設定 -->
-    <meta name="expires" content="0"> <!-- キャッシュさせない設定 -->
-    <meta http-equiv="cache-control" content="no-cache, no-store"> <!-- キャッシュさせない設定 -->
-    <meta name="robots" content="noindex"> <!-- インデックスさせない設定 -->
+    <meta http-equiv="cache-control" content="no-cache, no-store">
+    <meta name="robots" content="noindex">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>かんたん勤怠-ユーザー登録｜日本クリーナーver20231216</title>
+    <title>かんたん勤怠-ユーザー登録</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css?20231216" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?20231216">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css?20231216">
     <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mavDIQE7RjKdBQVXIdYzOVylS-fZj5eA0Z2ybGY0_lBcbsk7jPASxJ5fw5WpZflpMiMo7-d5Dm-9qulmGzdqKf5n50bN5237U-T9Qr2_HTqd87NMI1csEu56kQvkLbWR" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly94czY3OTM0Ni54c3J2LmpwL2xpbmVfa2ludGFpL25paG9uLWNsZWFuZXIvdmVyMjAyMzEyMTYvc2V0dGluZy5odG1s"/><base target="_top">
 </head>
 <body>
-
     <form class="mx-auto">
         <div class="custom-input" style="width:100%; margin:5% auto; padding:20px; background-color: #ffffff;">
             <h1 style="font-size:24px;">ユーザー登録</h1>
@@ -37,13 +34,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-        <script>
-
+    <script>
         $(document).ready(function () {
             const liffId = "2002649990-4n3wvj6N";
             initializeLiff(liffId);
         })
-
+    
         function initializeLiff(liffId) {
             liff.init({
                 liffId: liffId
@@ -53,7 +49,6 @@
                 console.log('LIFF Initialization failed ', err);
             });
         }
-
         function sendText(text) {
             liff.sendMessages([{
                 'type': 'text',
@@ -64,10 +59,10 @@
                 window.alert('Failed to send message ' + error);
             });
         }
-
+    
         const params = (new URL(document.location)).searchParams;
         const key = params.get('key');
-
+    
         $(function () {
             $('form').submit(function () {
                 const date    = Date();
@@ -77,8 +72,6 @@
                 return false;
             });
         });
-
     </script>
-    
 </body>
 </html>
